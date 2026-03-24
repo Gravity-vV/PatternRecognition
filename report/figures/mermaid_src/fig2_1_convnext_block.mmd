@@ -1,0 +1,11 @@
+flowchart LR
+  X["x"] --> DW["DWConv 7x7"]
+  DW --> LN["LayerNorm"]
+  LN --> PW1["PWConv 1x1 (expand)"]
+  PW1 --> ACT["GELU"]
+  ACT --> PW2["PWConv 1x1 (project)"]
+  PW2 --> LS["LayerScale + DropPath"]
+
+  X --> ADD["Add (residual)"]
+  LS --> ADD
+  ADD --> Y["y"]

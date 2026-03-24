@@ -1,0 +1,9 @@
+flowchart LR
+  A["Dataset<br/>Oxford-IIIT Pets"] --> B["Data Loader<br/>split_seed 固定划分"]
+  B --> C["Preprocess<br/>图像端与向量端可链式"]
+  C --> D["Feature<br/>传统特征 / ConvNeXt embedding"]
+  D --> E["Classifier<br/>sklearn 或 torch"]
+  E --> F["Evaluator<br/>metrics + confusion"]
+
+  F --> G["CSV 输出<br/>统一 schema"]
+  F --> H["Artifacts<br/>confusion.json / model.pt 等"]

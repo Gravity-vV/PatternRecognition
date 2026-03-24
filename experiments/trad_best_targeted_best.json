@@ -1,0 +1,18 @@
+{
+  "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C10p0__gscale",
+  "preprocess": [
+    "resize_numpy_224",
+    "normalizer_zscore_vec"
+  ],
+  "features": [
+    "handcrafted_fusion"
+  ],
+  "classifier": "svm_rbf",
+  "params": {
+    "svm_rbf": {
+      "C": 10.0,
+      "gamma": "scale",
+      "random_state": 0
+    }
+  }
+}

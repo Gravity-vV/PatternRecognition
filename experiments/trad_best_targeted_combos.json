@@ -1,0 +1,287 @@
+[
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C1p0__gscale",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 1.0,
+        "gamma": "scale",
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C1p0__g0p01",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 1.0,
+        "gamma": 0.01,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C1p0__g0p03",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 1.0,
+        "gamma": 0.03,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C10p0__gscale",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 10.0,
+        "gamma": "scale",
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C10p0__g0p01",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 10.0,
+        "gamma": 0.01,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C10p0__g0p03",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 10.0,
+        "gamma": 0.03,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C30p0__gscale",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 30.0,
+        "gamma": "scale",
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C30p0__g0p01",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 30.0,
+        "gamma": 0.01,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_rbf__C30p0__g0p03",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_rbf",
+    "params": {
+      "svm_rbf": {
+        "C": 30.0,
+        "gamma": 0.03,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_linear__C0p1",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_linear",
+    "params": {
+      "svm_linear": {
+        "C": 0.1,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_linear__C1p0",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_linear",
+    "params": {
+      "svm_linear": {
+        "C": 1.0,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-svm_linear__C10p0",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "svm_linear",
+    "params": {
+      "svm_linear": {
+        "C": 10.0,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-rf__N500__dnone",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "random_forest",
+    "params": {
+      "random_forest": {
+        "n_estimators": 500,
+        "max_depth": null,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-rf__N500__d30",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "random_forest",
+    "params": {
+      "random_forest": {
+        "n_estimators": 500,
+        "max_depth": 30,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-rf__N1000__dnone",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "random_forest",
+    "params": {
+      "random_forest": {
+        "n_estimators": 1000,
+        "max_depth": null,
+        "random_state": 0
+      }
+    }
+  },
+  {
+    "tag": "trad_best_try__img-resize224__vec-zscore__feat-fusion__clf-rf__N1000__d30",
+    "preprocess": [
+      "resize_numpy_224",
+      "normalizer_zscore_vec"
+    ],
+    "features": [
+      "handcrafted_fusion"
+    ],
+    "classifier": "random_forest",
+    "params": {
+      "random_forest": {
+        "n_estimators": 1000,
+        "max_depth": 30,
+        "random_state": 0
+      }
+    }
+  }
+]

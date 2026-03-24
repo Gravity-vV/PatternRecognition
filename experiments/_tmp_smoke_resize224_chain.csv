@@ -1,0 +1,2 @@
+dataset,split_seed,tag,preprocess,feature,classifier,accuracy,precision,recall,f1,train_time_sec,inference_time_sec,n_train,n_test,model_path,confusion_path
+oxford_pets,0,smoke_resize224_chain,resize_numpy_224+normalizer_zscore_vec,handcrafted_fusion,svm_rbf,0.11011174707004634,0.11455495676387809,0.11020203681048282,0.10091725905789131,187.1767309580464,100.12525279191323,3680,3669,experiments/artifacts_task4/model_oxford_pets_0_smoke_resize224_chain.joblib,experiments/artifacts_task4/confusion_oxford_pets_0_smoke_resize224_chain.json

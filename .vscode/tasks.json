@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "task4: sweep all (numpy+torch)",
+			"type": "shell",
+			"command": "zsh",
+			"args": [
+				"-lc",
+				"source .venv/bin/activate && python -m experiments.task4_runner --sweep --split-seed 0 --epochs 1 --batch-size 32 --num-workers 0 --out-csv experiments/sweep_all_raw.csv --leaderboard-csv experiments/sweep_all_leaderboard.csv --topk 30"
+			],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "tag": "transfer_head_e5_aug",
+    "preprocess": ["torch_augment_224", "imagenet_normalize"],
+    "features": [],
+    "classifier": "convnext_tiny_transfer",
+    "params": {
+      "convnext_tiny_transfer": {
+        "mode": "head",
+        "epochs": 5,
+        "lr": 0.001,
+        "batch_size": 32
+      }
+    }
+  },
+  {
+    "tag": "transfer_partial_e5_aug",
+    "preprocess": ["torch_augment_224", "imagenet_normalize"],
+    "features": [],
+    "classifier": "convnext_tiny_transfer",
+    "params": {
+      "convnext_tiny_transfer": {
+        "mode": "partial",
+        "epochs": 5,
+        "lr": 0.0005,
+        "batch_size": 32
+      }
+    }
+  }
+]

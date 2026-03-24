@@ -1,0 +1,39 @@
+flowchart TB
+  subgraph Input["输入"]
+    X["图像 x"] --> DL["Data Loader<br/>train/val/test"]
+  end
+
+  subgraph Pre["图像端预处理"]
+    DL --> P1["Resize 224x224"]
+    P1 --> P2["ImageNet Normalize"]
+    P2 --> P3{"Train 阶段?"}
+    P3 -- "yes" --> AUG["torch_augment_224<br/>随机裁剪/翻转等"]
+    P3 -- "no" --> NOAUG["不做增强"]
+  end
+
+  subgraph Feat["特征提取：冻结 ConvNeXt"]
+    AUG --> CX["ConvNeXt-Tiny Backbone<br/>Frozen"]
+    NOAUG --> CX
+    CX --> GAP["GAP + Flatten<br/>embedding 向量"]
+    GAP --> CACHE[(Embedding Cache)]
+  end
+
+  subgraph Vec["向量端处理"]
+    CACHE --> VN["Vector Normalize<br/>min-max / z-score / none"]
+    VN --> OPT{"可选"}
+    OPT -- "PCA" --> PCA["PCA 降维"]
+    OPT -- "不用 PCA" --> NOPCA["保持原维度"]
+  end
+
+  subgraph Clf["分类器"]
+    PCA --> CLF["LogReg / SVM 等"]
+    NOPCA --> CLF
+    CLF --> YHAT["预测标签 y_hat"]
+  end
+
+  subgraph Eval["评测与输出"]
+    YHAT --> EV["Evaluator"]
+    EV --> MET["Accuracy / Precision / Recall / F1"]
+    EV --> CM["Confusion Matrix (json)"]
+    EV --> OUT["CSV（统一 schema）"]
+  end

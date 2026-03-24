@@ -1,0 +1,14 @@
+numpy>=1.23
+scipy>=1.10
+scikit-learn>=1.3
+scikit-image>=0.21
+
+# Task 4 (Modern baselines)
+torch
+torchvision
+
+# Frontend (Streamlit)
+streamlit
+
+# Report figures
+matplotlib>=3.7
